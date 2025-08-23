@@ -184,10 +184,6 @@
 
 # Step 4: Expose the Argo CD Server
 
-    Get the service URL:
-
-    minikube service argocd-server -n argocd --url
-
     To access the Argo CD web interface, expose the Argo CD server using the kubectl port-forward command:
 
     kubectl port-forward svc/argocd-server -n argocd 8080:443

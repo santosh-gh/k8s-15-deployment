@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: order-service
-          image: acronlinestoredevuksouth001.azurecr.io/order
+          image: e880613/order:v1
           ports:
             - containerPort: 3000
           env:
@@ -62,7 +62,7 @@ spec:
             periodSeconds: 3
       initContainers:
         - name: wait-for-rabbitmq
-          image: busybox
+          image: busybox:latest
           command:
             ["sh", "-c", "until nc -zv rabbitmq 5672; do echo waiting for rabbitmq; sleep 2; done;"]
           resources:
