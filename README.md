@@ -204,7 +204,7 @@
 
     Connect a Git repository to Argo CD. This repository should contain the Kubernetes manifests for the applications you want to deploy.
 
-    In the Argo CD web interface, click on New Repository.
+    In the Argo CD web interface, Select Setting, Repository, Connect Repository
     Cretae new app
     Fill in the details like Application Name, Project, Sync Policy, and the Git repository URL.
     Specify the path within the repository where the manifests are stored.
