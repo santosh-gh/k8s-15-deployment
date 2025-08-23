@@ -68,7 +68,7 @@ spec:
         env:
         - name: KUBERNETES_CLUSTER_DOMAIN
           value: {{ quote .Values.kubernetesClusterDomain }}
-        image: busybox
+        image: busybox:latest
         name: wait-for-rabbitmq
         resources: {{- toYaml .Values.orderService.waitForRabbitmq.resources | nindent
           10 }}
