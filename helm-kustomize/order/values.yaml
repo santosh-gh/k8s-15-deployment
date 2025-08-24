@@ -28,7 +28,7 @@ orderService:
   type: ClusterIP
   waitForRabbitmq:
     image:
-      repository: busybox
+      repository: busybox:latest
     resources:
       limits:
         cpu: 75m
